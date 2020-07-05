@@ -56,9 +56,17 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="297" y="46" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1593962360399" />
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1593962368639">
+    <state x="476" y="184" key="VCS.ChangeListViewerDialog" timestamp="1594035443505">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1593962368639" />
+    <state x="476" y="184" key="VCS.ChangeListViewerDialog/0.23.1440.877@0.23.1440.877" timestamp="1594035443505" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1594035432778">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1594035432778" />
+    <state x="508" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594035405206">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="508" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1594035405206" />
   </component>
 </project>
