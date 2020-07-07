@@ -120,3 +120,5 @@ par(mfrow=c(1,1))
 
 X11011912_arima<-arima(sqrt(X11011912), order = c(0,1,1), seasonal = list(order = c(0,1,1), frequency = 12))
 X11011912_arima
+
+checkresiduals(X11011912_arima, main = "")
