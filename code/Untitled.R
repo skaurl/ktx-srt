@@ -95,13 +95,9 @@ for(a in 0:1) {
   for(b in 1:1) {
     for(c in 0:1) {
       for(d in 0:1) {
-        for(e in 1:1) {
-          for(f in 0:1) {
-            print(c(a,b,c,d,e,f))
-            print(AIC(arima(sqrt(X11011912), order = c(a,b,c), seasonal = list(order = c(d,e,f), frequency = 12))))
-            print(BIC(arima(sqrt(X11011912), order = c(a,b,c), seasonal = list(order = c(d,e,f), frequency = 12))))
-          }
-        }
+        print(c(a,1,b,c,1,d))
+        print(AIC(arima(sqrt(X11011912), order = c(a,1,b), seasonal = list(order = c(c,1,d), frequency = 12))))
+        print(BIC(arima(sqrt(X11011912), order = c(a,1,b), seasonal = list(order = c(c,1,d), frequency = 12))))
       }
     }
   }
@@ -122,3 +118,13 @@ X11011912_arima<-arima(sqrt(X11011912), order = c(0,1,1), seasonal = list(order 
 X11011912_arima
 
 checkresiduals(X11011912_arima, main = "")
+
+arima(sqrt(X11011912), order = c(1,1,1), seasonal = list(order = c(0,1,1), frequency = 12))
+arima(sqrt(X11011912), order = c(0,1,2), seasonal = list(order = c(0,1,1), frequency = 12))
+arima(sqrt(X11011912), order = c(0,1,1), seasonal = list(order = c(1,1,1), frequency = 12))
+arima(sqrt(X11011912), order = c(0,1,1), seasonal = list(order = c(0,1,2), frequency = 12))
+
+arima(sqrt(X11011912), order = c(0,1,1), seasonal = list(order = c(0,1,1), frequency = 12))
+arimax(sqrt(X11011912), order = c(0,1,1), seasonal = list(order = c(0,1,1), frequency = 12), xtransf = data.frame(Jun15=1*(seq(sqrt(X11011912))==54)), transfer = list(c(1,0)))
+arimax(sqrt(X11011912), order = c(0,1,1), seasonal = list(order = c(0,1,1), frequency = 12), xtransf = data.frame(Dec16=1*(seq(sqrt(X11011912))>=72)), transfer = list(c(1,0)))
+arimax(sqrt(X11011912), order = c(0,1,1), seasonal = list(order = c(0,1,1), frequency = 12), xtransf = data.frame(Jun15=1*(seq(sqrt(X11011912))==54), Dec16=1*(seq(sqrt(X11011912))>=72)), transfer = list(c(1,0),c(1,0)))
