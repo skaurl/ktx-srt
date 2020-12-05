@@ -1,5 +1,4 @@
-# ktx-srt
-개입 계절형 ARIMA 모형을 이용한 고속철도 이용객 예측
+# 개입 계절형 ARIMA 모형을 이용한 고속철도 이용객 예측
 
 <div>
 <img src="https://user-images.githubusercontent.com/55614265/93199406-4f39f500-f789-11ea-947f-f723fc56ecb5.jpg">
